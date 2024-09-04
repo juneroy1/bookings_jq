@@ -36,7 +36,7 @@ export default{
     const bookings = ref([]);
 
     const createNewBooking = () => {
-      router.push('/')
+      router.push('/booking/create')
     }
     onMounted(() =>{
       
