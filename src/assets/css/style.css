@@ -2,6 +2,7 @@
   --button-color: black;
   --button-background-color: silver;
   --border-radius:3px;
+  --darken-1:.0625
 }
 .btn {
     font-family: inherit;
@@ -24,6 +25,10 @@
     color: var(--button-color);
     background-color: var(--button-background-color);
     border-radius: var(--border-radius);
+}
+
+.btn-primary:hover{
+    box-shadow: inset 0 0 0 20rem var(--darken-1);
 }
 .display-flex{
     display: flex;
