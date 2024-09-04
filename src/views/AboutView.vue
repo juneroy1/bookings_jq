@@ -26,7 +26,16 @@
     </table>
   </div>
 </template>
-<script setup>
+<script >
+import { ref } from 'vue';
 import '../assets/css/style.css'
+
+export default{
+  setup(){
+    const bookings = ref([]);
+
+    return {bookings}
+  }
+}
 
 </script>
