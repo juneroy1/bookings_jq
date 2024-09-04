@@ -29,12 +29,14 @@
 <script >
 import { onMounted, ref } from 'vue';
 import '../assets/css/style.css'
+import router from '@/router';
 
 export default{
   setup(){
     const bookings = ref([]);
 
     const createNewBooking = () => {
+      router.push('/')
     }
     onMounted(() =>{
       
