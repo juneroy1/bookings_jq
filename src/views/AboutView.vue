@@ -13,8 +13,15 @@
         <td>Juneroy</td>
         <td>ITEM 1</td>
         <td>10</td>
-        <td>10.00</td>
-        <td>100.00</td>
+        <td>$10.00</td>
+        <td>$100.00</td>
+      </tr>
+      <tr>
+        <td>Quinimon</td>
+        <td>ITEM 2</td>
+        <td>20</td>
+        <td>$20.00</td>
+        <td>$200.00</td>
       </tr>
     </table>
   </div>
