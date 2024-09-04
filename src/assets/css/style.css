@@ -4,3 +4,8 @@
     align-items: start;
     flex-direction: column;
 }
+
+.sizeBox-50{
+    height: 50px;
+    width: 100%;
+}
