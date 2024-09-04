@@ -9,6 +9,13 @@
       <th>Quantity</th>
       <th>Total Tax</th>
       <th>Total Cost</th>
+      <tr>
+        <td>Juneroy</td>
+        <td>ITEM 1</td>
+        <td>10</td>
+        <td>10.00</td>
+        <td>100.00</td>
+      </tr>
     </table>
   </div>
 </template>
