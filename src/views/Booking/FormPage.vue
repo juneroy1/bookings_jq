@@ -21,16 +21,16 @@ export default {
     },
     setup(){
         const booking = ref({
-      stallholder: null,
-      market_date: null,
-      total_cost_ex_tax: null,
-      total_tax: null,
-      total_cost_inc_tax: null,
-      comment: null,
-    });
+        stallholder: null,
+        market_date: null,
+        total_cost_ex_tax: null,
+        total_tax: null,
+        total_cost_inc_tax: null,
+        comment: null,
+        });
 
     const saveItem = () => {
-        alert('test')
+       
     }
 
     return { booking,saveItem };
