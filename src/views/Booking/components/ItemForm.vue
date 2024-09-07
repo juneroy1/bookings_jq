@@ -32,6 +32,10 @@
                 <label for="total_cost_inc_tax">Total cost inc tax:</label>
                 <input type="number" v-model="booking.total_cost_inc_tax">
             </div>
+            <div class="container">
+                <label for="comment">Comment</label>
+                <textarea v-model="booking.comment"></textarea>
+            </div>
         </div>
 </template>
 
@@ -47,6 +51,7 @@ export default {
             total_cost_ex_tax:null,
             total_tax:null,
             total_cost_inc_tax:null,
+            comment:null,
         })
 
         return {booking}
