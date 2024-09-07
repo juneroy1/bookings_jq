@@ -1,15 +1,19 @@
 <template>
   <div>
-    <button>Save</button>
+    <button @click="saveItem">Save</button>
     <button>Delete</button>
   </div>
 </template>
 
 <script>
+
 export default {
   name: "ActionButton",
-  setup() {
-    return {};
+  setup(props, { emit }) {
+    const saveItem = ( () => {
+        emit('saveItem')
+    })
+    return {saveItem};
   },
 };
 </script>

@@ -4,7 +4,9 @@
         <BookingItemForm
         :booking="booking"
         />
-        <ActionButton/>
+        <ActionButton
+        @saveItem="saveItem"
+        />
     </div>
 </template>
 
@@ -27,7 +29,11 @@ export default {
       comment: null,
     });
 
-    return { booking };
+    const saveItem = () => {
+        alert('test')
+    }
+
+    return { booking,saveItem };
     }
 }
 </script>
