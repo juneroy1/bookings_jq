@@ -28,7 +28,7 @@
                 <input type="number">
             </div>
             <div class="container">
-                <label for="market_date">Total cost inc tax:</label>
+                <label for="total_cost_inc_tax">Total cost inc tax:</label>
                 <input type="number">
             </div>
         </div>
@@ -45,6 +45,7 @@ export default {
             market_date:null,
             total_cost_ex_tax:null,
             total_tax:null,
+            total_cost_inc_tax:null,
         })
 
         return {booking}
