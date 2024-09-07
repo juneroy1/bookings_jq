@@ -35,7 +35,7 @@ export default{
     const bookings = ref([]);
 
     onMounted(() =>{
-      console.log("bookings mounted",bookings)
+      
     })
     
     return {bookings}
