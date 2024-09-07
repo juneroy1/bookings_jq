@@ -11,6 +11,14 @@
                     <option value="3">Derano</option>
                 </select>
             </div>
+            <div class="container">
+                <label for="market_date">Market date:</label>
+                <select name="market_date" id="market_date">
+                    <option value="1">Market 1</option>
+                    <option value="2">Market 2</option>
+                    <option value="3">Market 3</option>
+                </select>
+            </div>
         </div>
 </template>
 
