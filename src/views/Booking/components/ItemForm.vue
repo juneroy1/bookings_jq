@@ -1,6 +1,7 @@
 <template>
     <div class="header">
         <h2>Create new booking</h2>
+        {{ booking }}
     </div>
         <div class="form">
             <div class="container">
@@ -21,15 +22,15 @@
             </div>
             <div class="container">
                 <label for="total_cost_ex_tax">Total Cost Ex Tax:</label>
-                <input type="number">
+                <input type="number" v-model="booking.total_cost_ex_tax">
             </div>
             <div class="container">
                 <label for="market_date">Total tax:</label>
-                <input type="number">
+                <input type="number" v-model="booking.total_tax">
             </div>
             <div class="container">
                 <label for="total_cost_inc_tax">Total cost inc tax:</label>
-                <input type="number">
+                <input type="number" v-model="booking.total_cost_inc_tax">
             </div>
         </div>
 </template>
