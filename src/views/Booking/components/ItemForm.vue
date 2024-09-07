@@ -2,7 +2,6 @@
     <div class="header">
         <h2>Create new booking</h2>
     </div>
-    {{ booking }}
         <div class="form">
             <div class="container">
                 <label for="stallholder">Stallholder:</label>
@@ -36,6 +35,7 @@ export default {
         const booking = ref({
             stallholder:null,
             market_date:null,
+            total_cost_ex_tax:null,
         })
 
         return {booking}
