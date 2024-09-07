@@ -16,20 +16,14 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
+        <tr :key="index" v-for="(booking,index) in bookings">
           <td>Juneroy</td>
           <td>ITEM 1</td>
           <td>10</td>
           <td>$10.00</td>
           <td>$100.00</td>
         </tr>
-        <tr>
-          <td>Quinimon</td>
-          <td>ITEM 2</td>
-          <td>20</td>
-          <td>$20.00</td>
-          <td>$200.00</td>
-        </tr>
+        
       </tbody>
     </table>
   </div>
@@ -41,7 +35,28 @@ import router from "@/router";
 
 export default {
   setup() {
-    const bookings = ref([]);
+    const bookings = ref([
+      {
+        id:1,
+        stall_holder:1,
+        booking_item:1,
+        market_date:1,
+        quantity:11,
+        total_tax:10.00,
+        total_cost:1000.00,
+        total_cost_inc_tax:1010.00,
+      },
+      {
+        id:2,
+        stall_holder:2,
+        booking_item:2,
+        market_date:1,
+        quantity:5,
+        total_tax:10.00,
+        total_cost:500.00,
+        total_cost_inc_tax:510.00,
+      }
+    ]);
 
     const createNewBooking = () => {
       router.push("/booking/create");
