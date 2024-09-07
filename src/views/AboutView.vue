@@ -27,15 +27,19 @@
   </div>
 </template>
 <script >
-import { ref } from 'vue';
+import { onMounted, ref } from 'vue';
 import '../assets/css/style.css'
 
 export default{
   setup(){
     const bookings = ref([]);
 
+    onMounted(() =>{
+      console.log("bookings mounted",bookings)
+    })
+    
     return {bookings}
-  }
+  },
 }
 
 </script>
