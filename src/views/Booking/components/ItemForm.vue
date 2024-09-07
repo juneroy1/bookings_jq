@@ -20,6 +20,10 @@
                     <option value="3">Market 3</option>
                 </select>
             </div>
+            <div class="container">
+                <label for="market_date">Total Cost Ex Tax:</label>
+                <input type="number">
+            </div>
         </div>
 </template>
 
@@ -29,7 +33,6 @@ import { ref } from 'vue';
 export default {
     name: "BookingItemForm",
     setup () {
-        
         const booking = ref({
             stallholder:null,
             market_date:null,
